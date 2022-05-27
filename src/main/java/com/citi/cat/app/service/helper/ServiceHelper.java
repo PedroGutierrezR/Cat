@@ -6,14 +6,15 @@ public class ServiceHelper {
 
 	public static String getTheCorrectOrder(ResponseFromApi responseFromApi) {
 		
+		// Evaluamos el resultado del módulo
 		if(responseFromApi.getLength() % 2 != 0) {
 			
 			String fact = responseFromApi.getFact();
-			System.out.println(fact);
-			
+			// Le pasamos fact por el constructor a la clase StringBuilder
 			StringBuilder strb = new StringBuilder(fact);
+			// Utilizamos el método reverse() de la clase StringBuilder -> retorna StringBuilder
+			// Pero utilizamos el método toString() para que retorne un String
 			fact = strb.reverse().toString();
-			System.out.println(fact);
 			return fact;
 			
 		}

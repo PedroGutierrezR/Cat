@@ -4,12 +4,10 @@ $(document).ready(function() {
 	let loader = $("#loading-screen");
 	configureLoadingScreen(loader);
 
-	// Este evento va a escuchar el boton "Consultar" del jsp.
+	// Este evento va a escuchar el boton "Consultar Api" del jsp.
 	$("#getFact").click(function() {
 
-		// Si está todo la validacion de cada input retorna true entonces se realiza la petición
-
-		// Ajax que solicita la información por método POST.
+		// Ajax que solicita la información por método GET.
 		$.ajax({
 			type: "GET",
 			dataType: "json",

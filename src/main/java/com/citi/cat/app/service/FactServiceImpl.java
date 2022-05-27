@@ -19,24 +19,25 @@ public class FactServiceImpl implements FactService {
 
 		// Creamos el objeto de respuesta
 		FactResponse factResponse = new FactResponse();
-		// Url a consular
+		// Url a consultar
 		String url = "https://catfact.ninja/fact";
 
 		try {
 			
-			// Obtenemos la respuesta de la Api y la guardamos en ResponseFromApi
+			// Obtenemos la respuesta de la Api y la guardamos en el objeto responseFromApi
 			ResponseFromApi responseFromApi = restTemplate.getForObject(url, ResponseFromApi.class);
-			// Hacemos los "set"
+			// Hacemos los "set" correspondientes
 			factResponse.setResponse(ServiceHelper.getTheCorrectOrder(responseFromApi));
 			factResponse.setMessage("Servicio finalizado correctamente");
 			
 		} catch (Exception e) {
-			
+			e.printStackTrace();
+			// Hacemos los "set" indicando que hubo error
 			factResponse.setResponse("");
 			factResponse.setMessage("Error al consultar Api");
-			
 		}
-
+		
+		//retornamos la respuesta
 		return factResponse;
 	}
 
