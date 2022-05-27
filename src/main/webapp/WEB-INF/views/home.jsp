@@ -72,7 +72,7 @@
 			<div class="row">
 				<div class="col-lg-8 col-md-10 mx-auto col-12">
 					<div class="hero-text mt-5 text-center">
-						<h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Cat Challenger</h1>
+						<h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Cat Challenge</h1>
 						<h6 data-aos="fade-up" data-aos-delay="300">For Citi</h6>
 
 						<button id="getFact" class="btn btn-danger mt-5 p-3 text-white" data-aos="fade-up" data-aos-delay="400">Consultar
