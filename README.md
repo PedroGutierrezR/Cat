@@ -1,4 +1,4 @@
-# **Cat **
+# Cat 
 
 ## Introducción
 Cat es un proyecto desarrollado en el contexto de un desafío técnico. Consiste en desarrollar un servicio que llama a "Cat Facts Api" (https://catfact.ninja/),  la cual retorna un hecho de un gato. Dependiendo del largo del hecho (cadena de caracteres), si el largo es par, la frase se entregará de la misma manera. Si el largo es impar, la frase debe enviarse invertida.
